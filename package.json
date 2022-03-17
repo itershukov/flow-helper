@@ -4,6 +4,9 @@
   "description": "Universal tool to simplify commit messages building",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "mr": "./dist/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm version patch && git push & yarn build",
